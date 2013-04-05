@@ -28,22 +28,23 @@ Call the functions like this:
 Configuration
 -------------
 
-kyco.cookies.js contains three functions: createCookie(), readCookie() and deleteCookie().
+kyco.cookies.js contains three functions:
 
-    createCookie(<em><name></em>, <em><value></em>, <em><expiry in days></em>)
+###createCookie(<name>, <value>, <expiry in days>)
 
-NOTE: expiry is optional
-e.g. createCookie('myNewCookie', true, 5) // expires in 5 days
-e.g. createCookie('anotherCookie', 'username') // expires at end of session
+    createCookie('myNewCookie', true, 5) // expires in 5 days
+    createCookie('anotherCookie', 'username') // expires at end of session
 
-    readCookie(<em><name></em>)
+NOTE: expiry is optional.
 
-e.g. readCookie('myNewCookie') // returns <em>true</em>
-e.g. readCookie('doesNotExistCookie') // returns <em>null</em>
+###readCookie(<em><name></em>)
 
-    deleteCookie(<em><name></em>)
+    readCookie('myNewCookie') // returns true
+    readCookie('doesNotExistCookie') // returns null
 
-e.g. deleteCookie('myNewCookie') // deletes <em>myNewCookie</em>
+###deleteCookie(<em><name></em>)
+
+    deleteCookie('myNewCookie') // deletes <em>myNewCookie</em>
 
 
 Support
