@@ -13,15 +13,16 @@ function createCookie(name, value, days) {
     // Manually create a cookie string, e.g.: document.cookie = newcookie=true; expires=Thu May 10 2012 08:27:20 UTC; path=/;
     // Note: appending the UTC in the expires string will automatically add or subtract the hours for the given time zone.
 
-    if (days){
+    if (days) {
         // Set the expiry date to expire after given amount of days.
         var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         var expires = '; expires=' + date.toUTCString() + ';';
+    } else {
+        var expires = ''; // Set expiry date to expire upon session close.
     }
-    else var expires = ''; // Set expiry date to expire upon session close.
 
-    document.cookie = name + '=' + value + expires + 'path=/'; // Create the cookie.
+    document.cookie = name + '=' + value + expires + 'path=/'; // Creates the cookie.
 }
 
 function readCookie(name) {
@@ -30,11 +31,16 @@ function readCookie(name) {
 
     var nameWithEquals = name + '=';
     var cookieArray = document.cookie.split(';');
+    var cookieArrayLength = cookieArray.length;
 
-    for (var i = 0; i < cookieArray.length; i++){
+    for (var i = 0; i < cookieArrayLength; i++) {
         var cookie = cookieArray[i];
-        while (cookie.charAt(0) == ' ') cookie = cookie.substring(1, cookie.length);
-        if (cookie.indexOf(nameWithEquals) == 0) return cookie.substring(nameWithEquals.length, cookie.length);
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1, cookie.length);
+        }
+        if (cookie.indexOf(nameWithEquals) === 0) {
+            return cookie.substring(nameWithEquals.length, cookie.length);
+        }
     }
 
     return null;
