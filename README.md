@@ -29,11 +29,10 @@ Configuration
 -------------
 
 ###createCookie(name, value, expiry in days)
+NOTE: expiry is optional.
 
     createCookie('myNewCookie', true, 5) // expires in 5 days
     createCookie('anotherCookie', 'username') // expires at end of session
-
-NOTE: expiry is optional.
 
 ###readCookie(name)
 
