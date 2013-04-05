@@ -28,19 +28,19 @@ Call the functions like this:
 Configuration
 -------------
 
-###createCookie(*name*, *value*, *expiry in days*)
+###createCookie(_name_, _value_, _expiry in days_)
 
     createCookie('myNewCookie', true, 5) // expires in 5 days
     createCookie('anotherCookie', 'username') // expires at end of session
 
 NOTE: expiry is optional.
 
-###readCookie(*name*)
+###readCookie(_name_)
 
     readCookie('myNewCookie') // returns true
     readCookie('doesNotExistCookie') // returns null
 
-###deleteCookie(*name*)
+###deleteCookie(_name_)
 
     deleteCookie('myNewCookie') // deletes myNewCookie
 
