@@ -9,7 +9,7 @@ How to install
 
 Download the js file and include it in your head (no jquery required):
 
-	<script src="jquery.kyco.cookies.min.js"></script>
+	<script src="kyco.cookies.min.js"></script>
 
 Call the functions anywhere to create, read, update or delete:
 
