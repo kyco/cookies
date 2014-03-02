@@ -31,4 +31,4 @@ Call the functions anywhere to create, read, update or delete cookies:
 Support
 -------
 
-For bugs or improvements please email info@kyco.co.za.
+For bugs or improvements please email [info@kycosoftware.com](mailto:info@kycosoftware.com).
