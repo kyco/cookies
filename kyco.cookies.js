@@ -3,7 +3,7 @@
 	kyco.cookies
 	v1.1.0
 
-	Brought to you by http://www.kyco.co.za
+	Brought to you by http://www.kycosoftware.com
 	Copyright 2013 Cornelius Weidmann
 
 	Distributed under the GPL
