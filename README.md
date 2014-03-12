@@ -31,4 +31,5 @@ Call the functions anywhere to create, read, update or delete cookies:
 Support
 -------
 
-For bugs or improvements please email [info@kycosoftware.com](mailto:info@kycosoftware.com).
+For bugs or improvements please use the [issues tab](https://github.com/kyco/cookies/issues)
+or email [support@kycosoftware.com](mailto:support@kycosoftware.com).
