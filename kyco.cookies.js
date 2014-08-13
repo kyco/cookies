@@ -20,15 +20,15 @@ function createCookie(name, value, days, path) {
 	// Creates a cookie with the given name and value.
 	// The days and path parameters are optional.
 
-	/*	
-	**	Not setting the days parameter or passing in zero will 
+	/*
+	**	Not setting the days parameter or passing in zero will
 	**	create a cookie which expires at the end of the session.
 	**	Setting the days parameter to -1 will create a cookie
 	**	which expires immediately, i.e. deletes the cookie.
 	**
-	**	Manually creating a cookie string looks something like this, e.g.
+	**	Manually creating a cookie string looks something like this, e.g.:
 	**
-	**	document.cookie = foo=bar; expires=Thu May 10 2012 08:27:20 UTC; path=/;
+	**	document.cookie = 'foo=bar; expires=Thu May 10 2012 08:27:20 UTC; path=/';
 	**
 	**	Note: appending the "UTC" in the expires string will automatically
 	**	add or subtract the hours for the given time zone.
@@ -44,7 +44,9 @@ function createCookie(name, value, days, path) {
 	if (days != 0) {
 		// Set expiry date to UTC Date/Time string for days parameter
 		var date = new Date();
+
 		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+
 		days = date.toUTCString();
 	} else {
 		// Set expiry date to expire upon session close
@@ -67,7 +69,7 @@ function readCookie(name) {
 
 	for (var i = 0, n = cookies.length; i < n; i++) {
 		var cookie = cookies[i];
-		var len = cookie.length;
+		var len    = cookie.length;
 
 		while (cookie.charAt(0) === ' ') {
 			cookie = cookie.substring(1, len);
