@@ -1,6 +1,8 @@
 kyco Cookies
 ============
 
+A simple script to create, read, update or delete cookies with javascript.
+
 How to install
 --------------
 
