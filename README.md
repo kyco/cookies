@@ -11,21 +11,21 @@ How to install
 
 Include the minified JS file in your head:
 
-  <script src="kyco.cookies.min.js"></script>
+    <script src="kyco.cookies.min.js"></script>
 
 Call the functions anywhere to create, read, update or delete cookies:
 
-  <script>
-    // Create a cookie named 'foo' with value 'bar' which will expire in 5 days.
-    createCookie('foo', 'bar', 5)
+    <script>
+      // Create a cookie named 'foo' with value 'bar' which will expire in 5 days.
+      createCookie('foo', 'bar', 5)
 
-    console.log(readCookie('foo')) // returns 'bar'
+      console.log(readCookie('foo')) // returns 'bar'
 
-    // Update 'foo' to 'newbar' which will expire in 365 days.
-    updateCookie('foo', 'newbar', 365)
+      // Update 'foo' to 'newbar' which will expire in 365 days.
+      updateCookie('foo', 'newbar', 365)
 
-    deleteCookie('foo') // deletes 'foo'
-  </script>
+      deleteCookie('foo') // deletes 'foo'
+    </script>
 
 
 Original idea from: [http://www.quirksmode.org/js/cookies.html](http://www.quirksmode.org/js/cookies.html)
