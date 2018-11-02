@@ -9,7 +9,7 @@ How to install
 
     Download or clone the repo
 
-Include the minified JS file in your head:
+Include the minified JS file in the `<head>` tag:
 
     <script src="kyco.cookies.min.js"></script>
 
