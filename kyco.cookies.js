@@ -1,20 +1,14 @@
-/*********************************************\
-
-	kyco.cookies
-	v1.1.0
-
-	Brought to you by http://www.kycosoftware.com
-	Copyright 2013 Cornelius Weidmann
-
-	Distributed under the GPL
-
-	Original idea from:
-	http://www.quirksmode.org/js/cookies.html
-
-	This code does not require jQuery,
-	simply copy and paste to use functions.
-
-\*********************************************/
+/*
+**
+**  kyco.cookies
+**  ============
+**
+**  Version 1.1.0
+**
+**  Brought to you by
+**  https://kyco.io
+**
+*/
 
 function createCookie(name, value, days, path) {
 	// Creates a cookie with the given name and value.
